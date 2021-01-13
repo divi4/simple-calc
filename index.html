@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Simple Calculator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1 class="center">Simple Calculator</h1>
+		<div class="main center">
+			<div class="input">
+				<label for="first">Input first number</label>
+				<input id="first" type="number" size="7" maxlength="7"></input>
+			</div>
+
+			<div class="select">
+				<button class="select-btn" type="button">Select<br>operator</button>
+				<div class="options hidden">
+					<div>
+						<button><kbd>+</kbd></button>
+						<button><kbd>-</kbd></button>
+					</div>
+					<div>
+						<button><kbd>&times;</kbd></button>
+						<button><kbd>&divide;</kbd></button>
+					</div>
+				</div>
+			</div>
+			<div class="input">
+				<label for="second">Input second number</label>
+				<input id="second" type="number" size="7" maxlength="7"></input>
+			</div>
+		</div>
+		<div class="center center-fix">
+			<button class="calculate" type="button">Calculate</button>
+		</div>
+		<div class="center center-fix">
+			<p class="answer"></p>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

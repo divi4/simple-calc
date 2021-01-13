@@ -1,0 +1,87 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: arial;
+    font-size: 62.5%;
+}
+p,
+button {
+    margin: 0;
+}
+p,
+kbd,
+input,
+button {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.4rem;
+}
+kbd {
+    font-size: 2.4rem;
+}
+label {
+    font-size: 1rem;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.input  {
+    flex-direction: column;
+}
+button {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 0.2rem 1.5rem;
+    margin-top: 1rem;
+}
+.select {
+    display: flex;
+    flex-direction: column;
+}
+.select-btn {
+    width: 7rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.hidden {
+    display: none;
+}
+.options div {
+    display: flex;
+    flex-flow: row wrap;
+}
+.options div button {
+    padding: 0 0.7rem;  /* Text isn't centered unless if you use padding */
+    display: flex;
+    flex-grow: 1;
+    margin-top: 5px;
+}
+.options div button:last-child {
+    margin-left: 5px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.center-fix {
+    margin-right: 17px;
+    margin-top: 1rem;
+}
